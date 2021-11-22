@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz Challenge</title>
 </head>
-<link 
+<link rel="stylesheet" href="./style.css">
+
 <body>
-    
+
+    <div class="timer">Time: <span id="time">0</span></div>
+
+    <div class="info-box">
+        <div id="info" class="start">
+            <h1>Coding Quiz Challenge!</h1>
+            <p>Some Rules to the Quiz</p>
+            <p>*There will be 100 seconds on the clock</p>
+            <p>*For every correct answer, you will lose no time.</p>
+            <p>*If you get an incorrect answer, you will lose 20 seconds.</p>
+            <p>Best of Luck!</p>
+
+            <h2>Click "Start Quiz" to begin.</h2>
+
+            <button id="start">Start Quiz</button>
+        </div>
+
+        <div id="questions" class="next">
+            <h2 id="question-title"></h2>
+            <div id="choices" class="choices"></div>
+        </div>
+        
+        <div id="last-screen" class="next">
+            <h2></h2>
+           
+          </div>
+
+        </div>
+        <script src="./answers.js"></script>
 </body>
+
 </html>
